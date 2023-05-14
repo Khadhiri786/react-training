@@ -1,8 +1,8 @@
 import React from 'react';
-import ClassComponent from './Questions/Question2/ClassComponent';
+import ReactFragmentComponent from './Questions/Question3';
 
 function App() {
-  return (<><ClassComponent/></>
+  return (<ReactFragmentComponent/>
   );
 }
 
