@@ -1,8 +1,8 @@
 import React from 'react';
-import Question1 from './Questions/Question1';
+import FunctionalComponent from './Questions/Question2/FunctionalComponent';
 
 function App() {
-  return (<><Question1/></>
+  return (<><FunctionalComponent/></>
   );
 }
 
