@@ -1,8 +1,8 @@
 import React from 'react';
-import FunctionalComponent from './Questions/Question2/FunctionalComponent';
+import ClassComponent from './Questions/Question2/ClassComponent';
 
 function App() {
-  return (<><FunctionalComponent/></>
+  return (<><ClassComponent/></>
   );
 }
 
