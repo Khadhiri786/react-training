@@ -54,7 +54,7 @@ const Question1: React.FC = () => {
         </thead>
         <tbody>
           {data?.map((employeeDetail) => (
-            <tr>
+            <tr key={employeeDetail?.empId}>
               <td>{employeeDetail?.empId}</td>
               <td>{employeeDetail?.employeeName}</td>
               <td>{employeeDetail?.employeeDesignation}</td>

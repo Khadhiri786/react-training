@@ -1,16 +1,16 @@
 import React from "react";
 import { Fragment } from "react";
 const fruitsData = [
-  { value: "Apple" },
-  { value: "Orange" },
-  { value: "Mango" },
-  { value: "PineApple" },
+  {id:1, value: "Apple" },
+  { id:2,value: "Orange" },
+  {id:3, value: "Mango" },
+  {id:4, value: "PineApple" },
 ];
 const vegetableData = [
-  { value: "Tomato" },
-  { value: "Potato" },
-  { value: "Carrot" },
-  { value: "Raddish" },
+  { id:1,value: "Tomato" },
+  {id:2, value: "Potato" },
+  { id:3,value: "Carrot" },
+  { id:4,value: "Raddish" },
 ];
 
 const OrderedListComponent: React.FC = () => {
@@ -19,7 +19,7 @@ const OrderedListComponent: React.FC = () => {
       <h1>Ordered List</h1>
       <ol>
         {fruitsData?.map((fruit) => (
-          <li>{fruit?.value}</li>
+          <li key={fruit?.id}>{fruit?.value}</li>
         ))}
       </ol>
     </Fragment>
@@ -31,7 +31,7 @@ const UnOrderedListComponent: React.FC = () => {
     <React.Fragment>
       <h1>Un Ordered List </h1>
       {vegetableData?.map((vegetable) => (
-        <li>{vegetable?.value}</li>
+        <li key={vegetable?.id}>{vegetable?.value}</li>
       ))}
     </React.Fragment>
   );
